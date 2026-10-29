@@ -9,6 +9,16 @@ The color and animation script can be loaded from an MQTT broker.
 
 [<p align=center><img src="distrib/demo_thumbnail.jpg" alt="Ambiance Demonstration as deployed at the Randall Museum" style="width:50%; height:auto;"></p>](https://youtu.be/LdthG7FvIyU "Ambiance Experiment")
 
+<p align="center">
+  <a href="https://youtu.be/LdthG7FvIyU">
+    <img src="distrib/demo_thumbnail.jpg" alt="Ambiance Demonstration as deployed at the Randall Museum" width="50%">
+  </a>
+</p>
+
+
+<p align=center>Demonstration as deployed at the Randall Museum: (https://youtu.be/LdthG7FvIyU) </p>
+
+
 
 ## Hardware used for this project
 
