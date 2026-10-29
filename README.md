@@ -8,11 +8,13 @@ The color and animation script can be loaded from an MQTT broker.
 
 
 <p align="center">
+  [Video] Ambiance deployed at the Randall Museum:
+  <br/>
   <a href="https://youtu.be/LdthG7FvIyU">
     <img src="distrib/demo_thumbnail.jpg" alt="Ambiance Demonstration as deployed at the Randall Museum" width="50%">
   </a>
   <br/>
-  <span style="font-size: smaller;">[Video] Ambiance deployed at the Randall Museum: https://youtu.be/LdthG7FvIyU</span>
+  https://youtu.be/LdthG7FvIyU
 </p>
 
 
