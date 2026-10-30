@@ -45,7 +45,7 @@ This page has the
   _green_. A drive named `QTPYS2BOOT` should appear on USB.
 
 - Run the `setup/_get_circuitpy_uf2.sh` script and drop the downloaded `uf2` file on the USB
-  drive. Once the device reboot, a USB drive named `CIRCUITPY` should appear.
+  drive. Once the device reboots, a USB drive named `CIRCUITPY` should appear.
 
 - Uploading the code on the ESP32 is done by _copying_ files to the USB drive named `CIRCUITPY`.
   You can drag'n'drop stuff manually. I prefer to automate things using scripts with MSYS,Cygwin, or Git Bash.
@@ -159,8 +159,8 @@ The following MQTT topics are used:
 An addressable LED string acts as a linear buffer of RGB values: a maximum number of
 "pixels" can be controlled, each with an individual RGB color.
 
-The number of LEDs in the string is configued by `NEO_LEN` in `code.py` and can be
-overwritten using the `Lenght` instruction in the script (see below).
+The number of LEDs in the string is configured by `NEO_LEN` in `code.py` and can be
+overwritten using the `Length` instruction in the script (see below).
 
 Often Arduino or ESP32 projects simply hardcode LED RGB values in their program, and
 one needs to recompile and upload a new program to change the color pattern.
@@ -180,7 +180,7 @@ patterns to use to fill the LED string, and how to animate it.
 
 `Length int ;`
 
-This instuctions sets the number of the specified integer. Must be > 0 and < the maximum
+This instuction sets the number of the specified integer. Must be > 0 and < the maximum
 buffer size compiled in the program (`NEO_LEN` in `code.py`, which defaults to 100).
 
 `Brightness float ;`
@@ -212,7 +212,7 @@ This is the same as the `Fill` instruction except the buffer is filled slowly wi
 a "delay" pause between each LED. The delay is a float representing seconds.
 
 
-# Color Aninmation Instructions
+## Color Animation Instructions
 
 `Slide Delay Count`
 
@@ -227,7 +227,7 @@ If the delay is negative, it reverses the direction of the slide/shift effect;
 the colors shift from the end towards the beginning of the LED string.
 
 
-### Example Effects
+## Example Effects
 
 Xmas colors:
 ```
@@ -235,7 +235,7 @@ Xmas colors:
 ```
 
 * `Fill #000000 1` quick "erases" all colors and thus turns off all LEDs in the string.
-* `SlowFill` then progressively make the colors re-appear, one by one.
+* `SlowFill` then progressively makes the colors re-appear, one by one.
   There is a repeated pattern of 10 green LEDs followed by 10 red LEDs.
   On a 100-LED string, the pattern is thus repeated 4 times.
 * `Slide 0.1 80` shifts the colors 80 times. Since this is a multiple of the fill pattern
@@ -250,7 +250,7 @@ Halloween colors:
 ```
 
 * `Fill #000000 1` quick "erases" all colors and thus turns off all LEDs in the string.
-* `SlowFill` then progressively make the colors re-appear, one by one.
+* `SlowFill` then progressively makes the colors re-appear, one by one.
   There is a repeated pattern of 40 orange LEDs followed by 10 yellow LEDs.
   On a 100-LED string, the pattern is thus repeated twice.
 * `Slide 0.05 100` shifts the colors 100 times. Since this is the size of the LED string
@@ -258,7 +258,7 @@ Halloween colors:
   With a delay of 0.05 seconds and 100 iterations, the animation lasts 5 seconds.
 
 
-### Usage As a Library
+## Usage As a Library
 
 The **Sequencer** can be used as a standalone library:
 
@@ -272,7 +272,7 @@ while seq.step(): True
 ```
 
 
-## License
+# License
 
 License: MIT
 
